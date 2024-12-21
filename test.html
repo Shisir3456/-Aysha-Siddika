@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শুভ জন্মদিন, আয়শা!</title>
+    <link rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/gift.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>শুভ জন্মদিন, কাকুলি</h1>
+            <p>আজ তোমার দিন, তোমার জন্য বিশেষ সারপ্রাইজ রয়েছে।</p>
+        </header>
+
+        <section class="gifts">
+            <h2>তোমার সারপ্রাইজ উপহার পেতে ক্লিক করো!</h2>
+            <div class="gift-box" onclick="openGift()">
+                <img src="https://img.icons8.com/ios/50/000000/gift.png" alt="gift" class="gift-icon"/>
+            </div>
+        </section>
+
+        <!-- Pop-up Modal -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>সারপ্রাইজ! 🎉</h2>
+                <p>এখানে তোমার উপহার! এটা তোমারই, কাকুলি</p>
+                <div class="surprise-gift" onclick="openSurprisePage()">
+    <img src="https://img.icons8.com/ios/50/000000/gift.png" alt="surprise-gift" class="surprise-icon"/>
+</div>
+                    <p>চমৎকার কিছু তোমার জন্য অপেক্ষা করছে!
+                    তার জন্য আগে ট্রিড দিতে হবে</p>
+                    <button onclick="closeGift()">বন্ধ করুন</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>❤️ তোমার বন্ধু,হুসাইন আহমেদ  </p>
+        </footer>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #FFDEE9, #FFDEE9 50%, #FF80A9);
+      color: #333;
+      text-align: center;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 425px;
+      border: 10px solid #9612eb;
+      margin: 60px auto;
+      box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+      transform-style: preserve-3d;
+      transform: perspective(800px);
+      transition: transform 1s ease;
+    }
+
+    .card:hover {
+      transform: perspective(800px) rotateY(180deg);
+    }
+
+    .card .front, .card .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: -10px;
+      backface-visibility: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      border: 10px solid #9612eb;
+    }
+
+    .card .front {
+      background-image: url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .card .back {
+      background-color: #fefefe;
+      transform: rotateY(180deg);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card .text-container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Nobile', sans-serif;
+      color: #331717;
+      font-size: 1.1em;
+    }
+
+    .card p {
+      font-size: 1.1em;
+      line-height: 1.4;
+      font-family: 'Nobile';
+      color: #331717;
+      font-style: italic;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .card #head {
+      font-size: 1.5em;
+      margin-top: 60px;
+      font-family: 'Nobile', sans-serif;
+      font-weight: bold;
+    }
+
+    .card .imgset img {
+      width: 100%;
+      box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+      border-radius: 5px;
+    }
+
+    /* Signature font for personal text */
+    .card .signature {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.3em;
+      color: #FF4081;
+    }
+
+    /* Add link to Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    
+    
+    
+    <style>
+  .card .back {
+    background-color: #fefefe;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .text-container {
+    width: 90%; /* Slightly reduced to fit better */
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    color: #331717;
+    font-size: 1em;
+    overflow-wrap: break-word; /* Prevents text overflow */
+    word-wrap: break-word; /* Ensures word breaking */
+  }
+
+  .card p {
+    font-size: 1em; /* Adjusted to make text fit */
+    line-height: 1.5; /* Better readability */
+    font-family: 'Nobile';
+    color: #331717;
+    font-style: italic;
+    margin-top: 15px; /* Reduced margin for better fit */
+  }
+
+  .card #head {
+    font-size: 1.4em;
+    margin-top: 3px; /* Adjusted for spacing */
+    font-family: 'Nobile', sans-serif;
+    font-weight: bold;
+  }
+
+  .card .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em; /* Adjusted for fitting */
+    color: #FF4081;
+  }
+</style>
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="front">
+      <div class="imgset">
+        <img src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png" alt="Cover Image">
+        
+        <style>
+  .card #head {
+    font-size: 1.7em; /* Larger font size for prominence */
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive; /* Stylish cursive font */
+    font-weight: bold;
+    color: #FF69B4; /* Stylish pink color */
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5); /* Adds a glow effect */
+  }
+</style>
+      </div>
+    </div>
+    <div class="back">
+      <div class="text-container">
+        <p id="head">Happy Birthday!</p>
+        <h5>আয়শা সিদ্দিকা </h5>
+        <p class="signature">জন্মদিন মোবারক, আয়শা সিদ্দিকা!<br>
+তুমিই সেই জিনিয়াস, যার সঙ্গে সব দিন স্পেশাল মনে হয়। আজ তোমার দিন, তাই মজা করো আর আমাকে ভুলে যেয়ো না! থাকো </p>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
